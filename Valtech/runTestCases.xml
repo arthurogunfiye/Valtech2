@@ -1,0 +1,14 @@
+<!DOCTYPE xml>
+<suite name="Frontend Test Cases" thread-count="1" parallel="classes">
+<test verbose="2" name="Valtech QA Automation Challenge">
+<parameters>
+<parameter name="browserName" value="chrome" />
+<parameter name="os" value="WINDOWS" />
+<parameter name="osVersion" value="10" />
+<parameter name="version" value="60" />
+<parameter name="environment" value="LIVE" />
+</parameters>
+<classes>
+</classes>
+</test>
+</suite>
