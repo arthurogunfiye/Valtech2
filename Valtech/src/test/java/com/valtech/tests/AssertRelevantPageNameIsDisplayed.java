@@ -8,9 +8,17 @@ import static org.testng.Assert.assertTrue;
 
 import facilities.TestCaseObject;
 
+/**
+ * 
+ * @author Arthur Ogunfuye
+ *
+ */
 public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
 
-    @Test
+    /**
+     * Verify that About page heading is displayed.
+     */
+	@Test
     public void verifyAboutPageHeadingIsDisplayed() {
 
         page.homePage().go();
@@ -32,15 +40,18 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
         waitUntilElementIsDisplayed(page.homePage().logo);
     }
 
-    @Test
+    /**
+     * Verify that Work page heading is displayed.
+     */
+	@Test
     public void verifyWorkPageHeadingIsDisplayed() {
 
         page.homePage().go();
         waitUntilElementIsDisplayed(page.homePage().logo);
 
-        //Click on About menu to navigate to About page
+        //Click on Work menu to navigate to Work page
         page.homePage().headerNavMenus.get(1).click();
-        waitUntilElementIsDisplayed(page.homePage().logo);
+        waitUntilElementIsDisplayed(page.workPage().logo);
 
         try {
         	assertTrue(page.workPage().pageName.isDisplayed());
@@ -54,15 +65,18 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
         waitUntilElementIsDisplayed(page.homePage().logo);
     }
 
-    @Test
+    /**
+     * Verify that Services page heading is displayed.
+     */
+	@Test
     public void verifyServicesPageHeadingIsDisplayed() {
 
         page.homePage().go();
         waitUntilElementIsDisplayed(page.homePage().logo);
 
-        //Click on About menu to navigate to About page
+        //Click on Services menu to navigate to Services page
         page.homePage().headerNavMenus.get(2).click();
-        waitUntilElementIsDisplayed(page.homePage().logo);
+        waitUntilElementIsDisplayed(page.servicesPage().logo);
 
         try {
         	assertTrue(page.servicesPage().pageName.isDisplayed());

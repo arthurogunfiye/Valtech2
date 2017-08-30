@@ -11,6 +11,7 @@
 <classes>
 <class name="com.valtech.tests.AssertThatLatestNewsSectionIsDisplayedInHomepage" />
 <class name="com.valtech.tests.AssertRelevantPageNameIsDisplayed" />
+<class name="com.valtech.tests.OutputNumberOfOfficesInContactPage" />
 </classes>
 </test>
 </suite>
