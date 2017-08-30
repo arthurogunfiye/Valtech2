@@ -18,7 +18,7 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
     /**
      * Verify that About page heading is displayed.
      */
-	@Test
+    @Test
     public void verifyAboutPageHeadingIsDisplayed() {
 
         page.homePage().go();
@@ -29,10 +29,10 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
         waitUntilElementIsDisplayed(page.homePage().logo);
 
         try {
-        	assertTrue(page.aboutPage().pageName.isDisplayed());
-        	logPrint("Page header is displayed: " + page.aboutPage().pageName.getText());
+            assertTrue(page.aboutPage().pageName.isDisplayed());
+            logPrint("Page header is displayed: " + page.aboutPage().pageName.getText());
         } catch (Exception e) {
-        	logFailure("Page header is not displayed");
+            logFailure("Page header is not displayed");
         }
 
         //Return to the home page
@@ -43,7 +43,7 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
     /**
      * Verify that Work page heading is displayed.
      */
-	@Test
+    @Test
     public void verifyWorkPageHeadingIsDisplayed() {
 
         page.homePage().go();
@@ -54,10 +54,10 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
         waitUntilElementIsDisplayed(page.workPage().logo);
 
         try {
-        	assertTrue(page.workPage().pageName.isDisplayed());
-        	logPrint("Page header is displayed: " + page.workPage().pageName.getText());
+            assertTrue(page.workPage().pageName.isDisplayed());
+            logPrint("Page header is displayed: " + page.workPage().pageName.getText());
         } catch (Exception e) {
-        	logFailure("Page header is not displayed");
+            logFailure("Page header is not displayed");
         }
 
         //Return to the home page
@@ -68,7 +68,7 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
     /**
      * Verify that Services page heading is displayed.
      */
-	@Test
+    @Test
     public void verifyServicesPageHeadingIsDisplayed() {
 
         page.homePage().go();
@@ -79,10 +79,10 @@ public class AssertRelevantPageNameIsDisplayed extends TestCaseObject {
         waitUntilElementIsDisplayed(page.servicesPage().logo);
 
         try {
-        	assertTrue(page.servicesPage().pageName.isDisplayed());
-        	logPrint("Page header is displayed: " + page.servicesPage().pageName.getText());
+            assertTrue(page.servicesPage().pageName.isDisplayed());
+            logPrint("Page header is displayed: " + page.servicesPage().pageName.getText());
         } catch (Exception e) {
-        	logFailure("Page header is not displayed");
+            logFailure("Page header is not displayed");
         }
 
         //Return to the home page

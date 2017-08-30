@@ -21,8 +21,8 @@ public class AssertThatLatestNewsSectionIsDisplayedInHomepage extends TestCaseOb
         try {
             assertTrue(page.homePage().latestNewsSectonHeading.isDisplayed());
             for(int i = 0; i < page.homePage().newsArticleHeadings.size(); i++) {
-            	logPrint("News article heading: " + page.homePage().newsArticleHeadings.get(i).getText() + " is displayed");
-            	logPrint("");
+                logPrint("News article heading: " + page.homePage().newsArticleHeadings.get(i).getText() + " is displayed");
+                logPrint("");
             }
             logPrint("Latest news section is displayed in the home page");
         } catch (Exception e) {
