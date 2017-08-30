@@ -13,7 +13,7 @@ You might also need to change some parameters in the TestNG xml file (https://gi
 
 To run the tests, in your IDE (I used Eclipse), just right-click on runTestCases.xml, scroll down to "Run As" and select "TestNG Suite".
 
-You could also run the tests from the command-line with the following commands -
+You could also run the tests from the command-line with the following commands (Ensure you're pointing to the location where the pom.xml file is;
 
 mvn clean,
 
