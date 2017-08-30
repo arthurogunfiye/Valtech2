@@ -13,8 +13,12 @@ You might also need to change some parameters in the TestNG xml file (https://gi
 
 To run the tests, in your IDE (I used Eclipse), just right-click on runTestCases.xml, scroll down to "Run As" and select "TestNG Suite".
 
-You could also run the tests from the command-line with the following commands - 
-mvn clean, 
-mvn generate-sources, 
+You could also run the tests from the command-line with the following commands -
+
+mvn clean,
+
+mvn generate-sources,
+
 mvn test -DbrowserName=chrome -Dos=OS X -DosVersion=Sierra -Dversion=60 -Denvironment=LIVE -DxmlFileName=runTestCases.xml
-or mvn test -DbrowserName=chrome -Dos=WINDOWS -DosVersion=10 -Dversion=60 -Denvironment=LIVE -DxmlFileName=runTestCases.xml if running on a WINDOWS 10 machine
+
+mvn test -DbrowserName=chrome -Dos=WINDOWS -DosVersion=10 -Dversion=60 -Denvironment=LIVE -DxmlFileName=runTestCases.xml if running on a WINDOWS 10 machine
