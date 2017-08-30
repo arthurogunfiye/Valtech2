@@ -24,7 +24,7 @@ public class Utilities {
      */
     public static void waitUntilElementIsDisplayed(final WebElement element) {
 
-        logPrint("Waiting for this element to be displayed: " + element.getText());
+        logPrint("Waiting for an element to be displayed: " + element.getText());
 
         int wait = 0;
         while (true) {

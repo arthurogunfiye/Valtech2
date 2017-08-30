@@ -33,7 +33,34 @@ public class PageProvider {
      * @param driver
      * @return Login Page
      */
-    public LoginPage loginPage() {
-        return PageFactory.initElements(driver, LoginPage.class);
+    public AboutPage aboutPage() {
+        return PageFactory.initElements(driver, AboutPage.class);
+    }
+
+    /**
+     * Initialise the Contact page and its elements.
+     * @param driver
+     * @return Contact Page
+     */
+    public ContactPage contactPage() {
+        return PageFactory.initElements(driver, ContactPage.class);
+    }
+
+    /**
+     * Initialise the Services page and its elements.
+     * @param driver
+     * @return Services Page
+     */
+    public ServicesPage servicesPage() {
+        return PageFactory.initElements(driver, ServicesPage.class);
+    }
+
+    /**
+     * Initialise the Work page and its elements.
+     * @param driver
+     * @return Work Page
+     */
+    public WorkPage workPage() {
+        return PageFactory.initElements(driver, WorkPage.class);
     }
 }

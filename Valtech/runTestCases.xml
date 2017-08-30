@@ -9,6 +9,8 @@
 <parameter name="environment" value="LIVE" />
 </parameters>
 <classes>
+<class name="com.valtech.tests.AssertThatLatestNewsSectionIsDisplayedInHomepage" />
+<class name="com.valtech.tests.AssertRelevantPageNameIsDisplayed" />
 </classes>
 </test>
 </suite>
